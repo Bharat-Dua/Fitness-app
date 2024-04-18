@@ -36,7 +36,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
       setExercises(exerciseData);
     };
     fetchExerciseData();
-  }, [bodyPart]);
+  }, [bodyPart, setExercises]);
 
   const paginate = (e, value) => {
     setCurrentPage(value);
