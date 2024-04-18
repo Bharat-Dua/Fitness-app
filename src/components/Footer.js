@@ -20,7 +20,7 @@ const Footer = () => {
         textAlign="center"
         pb="40px"
       >
-        Made with ❤️ by <a href="https://www.google.com" target="_blank" rel="noreferrer" >Bharat Dua</a>
+        Made with ❤️ by <a href="https://github.com/Bharat-Dua/Fitness-app" target="_blank" rel="noreferrer" >Bharat Dua</a>
       </Typography>
     </Box>
   );
