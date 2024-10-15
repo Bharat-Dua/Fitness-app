@@ -53,9 +53,21 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         justifyContent={"center"}
         sx={{ gap: { lg: "110px", xs: "50px" } }}
       >
-        {currentExercises.map((exercise, index) => (
-          <ExerciseCard key={index} exercise={exercise} />
-        ))}
+         {currentExercises.length > 0 ? (
+          currentExercises.map((exercise, index) => (
+            <ExerciseCard key={index} exercise={exercise} />
+          ))
+        ) : (
+          <Typography
+            sx={{
+              color: "white", 
+              fontSize: "30px", 
+              textAlign: "center",
+            }}
+          >
+            no exercise found
+          </Typography>
+        )}
       </Stack>
       <Stack mt={"100px"} alignItems={"center"}>
         {exercises.length > 9 && (
